@@ -10,4 +10,5 @@ WTForms==2.2.1
 Flask-Script
 Flask-SQLAlchemy
 Flask-Migrate
-psycopg2
+psycopg2-binary
+Flask-Login

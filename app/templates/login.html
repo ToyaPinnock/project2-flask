@@ -4,15 +4,18 @@
 <br>
 <h1 id="head">Login</h1>
 <br>
-<form class="login" action="{{ url_for('login') }}" method="post">
-    {% include 'flash_messages.html'%}{{ form.csrf_token }}
+<form class="login" action="{{ url_for('login') }}" method="POST">
+    {% include 'flash_messages.html'%}
     <div>
-        <div>{{form.username.label}}</div>
-        <div>{{form.username}}</div>
+        <label for="username">Username</label>
+        <br>
+        <input type="text" name="username" id="username">
+
     </div>
     <div>
-        <div>{{form.password.label}}</div>
-        <div>{{form.password}}</div>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password">
     </div>
     <br>
     <button type="submit" name="submit" id="btn">Log in</button>

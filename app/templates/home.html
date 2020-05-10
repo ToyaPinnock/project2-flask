@@ -1,10 +1,37 @@
 {% extends 'base.html' %} {% block main %}
 <br>
 <br>
+<br>
+
 <br> {% include 'flash_messages.html'%}
-<p>
-    {{ID}} "This is a Flask project2 including Flask-WTF,Flask-migration,Database(psycopg2),Flask-SQLAlchemy"
-</p>
+
+<div class="home-contain">
+    <div>
+        <img id="home-image" src="{{url_for('static', filename= 'image/home-image.jpg')}}" />
+    </div>
+    <div class="home-contain1">
+        <div class="home-item">
+            <div> <img id="icon" src="{{url_for('static', filename= 'image/photo-icon.jpg')}}" height="50" /></div>
+
+            <div id="home-head">
+                <h1>Photogram</h1>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <p>Share photos of your favourite moments with friends, family and the world. </p>
+        </div>
+        <br>
+
+        <div class="home-item1">
+            <div><a href="{{ url_for('userform') }}" id="btn1">Register</a></div>
+            <div><a href="{{ url_for('login') }}" id="btn2">Login</a></div>
+        </div>
+
+    </div>
+</div>
+
 
 
 {% endblock %}

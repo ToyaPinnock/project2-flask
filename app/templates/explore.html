@@ -1,0 +1,24 @@
+{% extends 'base.html'%} {% block main%}
+<br>
+<br>
+<br>
+<br>
+<div>
+    {% for post in posts %}
+    <div>
+        <div><img src="{{url_for('static', filename= 'uploads/' + post.photo ) }}" height="100" weight="100"></div>
+        <div>{{post.caption}} </div>
+
+    </div>
+    <div>
+        <div></div>
+        <div>{{post.created_on}}</div>
+    </div>
+
+
+
+</div>
+
+{% endfor %}
+
+<button type="submit" name="submit" id="btn">New Post</button> {% endblock %}

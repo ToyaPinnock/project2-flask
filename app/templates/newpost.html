@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block main %}
+<br>
+<br>
+<br>
+<div>
+    <h1 id="head">New Post</h1>
+</div>
+<br>
+<div class="myform">
+    <form class="" action="{{ url_for('newpost') }}" method="POST">
+        {% include 'flash_messages.html'%}
+        <div>
+            <label for="photo">Photo</label>
+            <br>
+            <input type="file" name="photo" accept="image/*" id="photo" />
+        </div>
+        <br>
+        <div>
+            <label for="caption">Caption</label>
+            <br>
+            <textarea rows="5" cols="46" name="caption" id="caption"></textarea>
+
+        </div>
+        <br>
+        <button type="submit" name="submit" id="btn">Submit</button>
+
+    </form>
+</div>
+
+
+
+
+{% endblock %}

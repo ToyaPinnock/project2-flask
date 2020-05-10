@@ -6,45 +6,51 @@
 <h1 id="head"> Register</h1>
 <br>
 <div class="myform">
-    <form method="post" action="{{url_for('userform')}} " enctype="multipart/form-data">
-        {% include 'flash_messages.html'%} {{form. csrf_token}}
+    <form method="POST" action="{{url_for('userform')}} " enctype="multipart/form-data">
+        {% include 'flash_messages.html'%}
         <div>
-            <div>{{form.username.label}}</div>
-            <div>{{form.username}}</div>
+            <label for="username">Username</label>
+            <br>
+            <input type="text" name="username" id="username">
 
         </div>
         <div>
-            <div>
-                {{form.password.label}}
-            </div>
-            <div>
-                {{form.password}}
-            </div>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" name="password" id="password">
         </div>
         <div>
-            <div> {{form.firstname.label}}</div>
-            <div>{{form.firstname}}</div>
+            <label for="firstname">Firstname</label>
+            <br>
+            <input type="text" name="firstname" id="firstname">
         </div>
         <div>
+            <label for="lastname">Lastname</label>
+            <br>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email">
 
-            <div>{{form.lastname.label}}</div>
-            <div>{{form.lastname}}</div>
         </div>
         <div>
-            <div>{{form.email.label}}</div>
-            <div>{{form.email}}</div>
+            <label for="location">Location</label>
+            <br>
+            <input type="text" name="location" id="location">
+
         </div>
         <div>
-            <div>{{form.location.label}}</div>
-            <div>{{form.location}}</div>
+            <label for="biography">Biography</label>
+            <br>
+            <textarea rows="5" cols="46" name="biography" id="biography"></textarea>
+
         </div>
         <div>
-            <div>{{form.biography.label}}</div>
-            <div>{{form.biography}}</div>
-        </div>
-        <div>
-            <div>{{form.photo.label}}</div>
-            <div>{{form.photo}}</div>
+            <label for="photo">Photo</label>
+            <br>
+            <input type="file" name="photo" accept="image/*" id="photo" />
         </div>
         <br>
 

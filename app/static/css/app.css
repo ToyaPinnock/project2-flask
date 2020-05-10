@@ -1,10 +1,23 @@
-img {
+/** phptogram icon */
+
+#icon {
     border-radius: 50%;
 }
+
+
+/** general */
 
 body {
     background-color: lightgray;
 }
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/** form pages  */
 
 #head {
     margin: 0 auto;
@@ -42,7 +55,68 @@ body {
     border: 1px solid rgb(123, 190, 22);
 }
 
-#input {
+input {
     margin: 0 auto;
     width: 100%;
+}
+
+
+/** Home page style */
+
+#home-head {
+    font-style: italic;
+}
+
+#home-image {
+    box-shadow: 0 4px 8px 0 rgb(0, 89, 255);
+}
+
+.home-contain {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home-contain1 {
+    padding: 20px;
+    background-color: beige;
+    box-shadow: 0 4px 8px 0 rgb(0, 89, 255);
+}
+
+.home-item {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.home-item1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn1 {
+    background-color: rgb(152, 211, 63);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#btn2 {
+    background-color: rgb(37, 37, 245);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
